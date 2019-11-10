@@ -3,12 +3,12 @@
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <!-- Generated 25 fevr. 2015 16:41:13 by Hibernate Tools 3.6.0 -->
 <hibernate-mapping>
-    <class name="com.forum.entities.PhotoUserProfile" table="photo_user_profile" catalog="forum_db">
+    <class name="com.forum.entity.PhotoUserProfile" table="photo_user_profile" catalog="forum_db">
         <id name="idPhotoUserProfile" type="java.lang.Integer">
             <column name="id_photo_user_profile" />
             <generator class="identity" />
         </id>
-        <many-to-one name="user" class="com.forum.entities.User" fetch="select">
+        <many-to-one name="user" class="com.forum.entity.User" fetch="select">
             <column name="id_user" not-null="true" />
         </many-to-one>
         <property name="photo" type="binary">

@@ -3,7 +3,7 @@
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <!-- Generated 25 fevr. 2015 16:41:13 by Hibernate Tools 3.6.0 -->
 <hibernate-mapping>
-    <class name="com.forum.entities.Category" table="category" catalog="forum_db">
+    <class name="com.forum.entity.Category" table="category" catalog="forum_db">
         <id name="idCategory" type="java.lang.Integer">
             <column name="id_category" />
             <generator class="identity" />
@@ -21,7 +21,7 @@
             <key>
                 <column name="id_category" not-null="true" />
             </key>
-            <one-to-many class="com.forum.entities.FilDiscussion" />
+            <one-to-many class="com.forum.entity.FilDiscussion" />
         </set>
     </class>
 </hibernate-mapping>

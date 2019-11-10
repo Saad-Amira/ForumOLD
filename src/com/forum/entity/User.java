@@ -1,4 +1,4 @@
-package com.forum.entities;
+package com.forum.entity;
 // Generated 25 fevr. 2015 16:41:06 by Hibernate Tools 3.6.0
 
 

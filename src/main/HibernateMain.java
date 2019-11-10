@@ -1,4 +1,4 @@
-package com.javahelps.hibernate;
+package main;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
@@ -6,9 +6,9 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-import com.forum.entities.Category;
+import com.forum.entity.Category;
 
-public class Main {
+public class HibernateMain {
 	// Create the SessionFactory when you start the application.
 	private static final SessionFactory SESSION_FACTORY;
 
